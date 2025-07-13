@@ -61,7 +61,7 @@ update(){
 install(){
 printf "${reset}[${b}info${reset}] Processing installing apktool ${apktool_version}\n"
 printf "${reset}[${b}info${reset}] Downloading file apktool_${apktool_version}\n"
-sh -c 'wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_$apktool_update.jar -O $PREFIX/bin/apktool.jar' > /dev/null 2>&1
+sh -c 'wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_$apktool_version.jar -O $PREFIX/bin/apktool.jar' > /dev/null 2>&1
 chmod +r $PREFIX/bin/apktool.jar
 printf "${reset}[${y}check${reset}] Downloading file apktool ";load
 sh -c 'wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O $PREFIX/bin/apktool' > /dev/null 2>&1
